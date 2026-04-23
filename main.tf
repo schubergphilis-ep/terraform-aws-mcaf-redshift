@@ -133,17 +133,18 @@ resource "aws_redshift_cluster" "default" {
   elastic_ip                          = local.elastic_ip
   encrypted                           = true
   #checkov:skip=CKV_AWS_321:User defined
-  enhanced_vpc_routing      = var.enhanced_vpc_routing
-  final_snapshot_identifier = var.final_snapshot_identifier
-  iam_roles                 = var.iam_roles
-  kms_key_id                = var.kms_key_arn
-  maintenance_track_name    = var.maintenance_track_name
-  node_type                 = var.node_type
-  number_of_nodes           = var.number_of_nodes
-  publicly_accessible       = var.publicly_accessible
-  skip_final_snapshot       = var.skip_final_snapshot
-  vpc_security_group_ids    = var.subnet_ids != null && length(var.security_group_ids) == 0 ? [aws_security_group.default[0].id] : var.security_group_ids
-  tags                      = var.tags
+  enhanced_vpc_routing         = var.enhanced_vpc_routing
+  final_snapshot_identifier    = var.final_snapshot_identifier
+  iam_roles                    = var.iam_roles
+  kms_key_id                   = var.kms_key_arn
+  maintenance_track_name       = var.maintenance_track_name
+  node_type                    = var.node_type
+  number_of_nodes              = var.number_of_nodes
+  preferred_maintenance_window = var.preferred_maintenance_window
+  publicly_accessible          = var.publicly_accessible
+  skip_final_snapshot          = var.skip_final_snapshot
+  vpc_security_group_ids       = var.subnet_ids != null && length(var.security_group_ids) == 0 ? [aws_security_group.default[0].id] : var.security_group_ids
+  tags                         = var.tags
 }
 
 resource "aws_redshift_logging" "default" {

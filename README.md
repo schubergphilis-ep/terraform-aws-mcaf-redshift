@@ -55,6 +55,7 @@ Terraform module to setup and manage an AWS Redshift cluster.
 | <a name="input_maintenance_track_name"></a> [maintenance\_track\_name](#input\_maintenance\_track\_name) | The name of the maintenance track to apply to the cluster. | `string` | `"current"` | no |
 | <a name="input_node_type"></a> [node\_type](#input\_node\_type) | The node type to be provisioned for the cluster | `string` | `"dc2.large"` | no |
 | <a name="input_number_of_nodes"></a> [number\_of\_nodes](#input\_number\_of\_nodes) | The number of compute nodes in the cluster | `number` | `1` | no |
+| <a name="input_preferred_maintenance_window"></a> [preferred\_maintenance\_window](#input\_preferred\_maintenance\_window) | The weekly time range during which system maintenance can occur, in UTC (e.g. `sat:10:00-sat:10:30`) | `string` | `null` | no |
 | <a name="input_publicly_accessible"></a> [publicly\_accessible](#input\_publicly\_accessible) | Whether or not the Redshift cluster will be publicly accessible | `bool` | `false` | no |
 | <a name="input_redshift_subnet_group"></a> [redshift\_subnet\_group](#input\_redshift\_subnet\_group) | Name of Redshift subnet group the cluster should be attached to | `string` | `null` | no |
 | <a name="input_region"></a> [region](#input\_region) | The AWS region where resources will be created; if omitted the default provider region is used | `string` | `null` | no |

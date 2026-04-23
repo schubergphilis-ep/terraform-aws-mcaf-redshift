@@ -102,6 +102,12 @@ variable "password" {
   description = "Password for the master DB user"
 }
 
+variable "preferred_maintenance_window" {
+  type        = string
+  default     = null
+  description = "The weekly time range during which system maintenance can occur, in UTC (e.g. `sat:10:00-sat:10:30`)"
+}
+
 variable "publicly_accessible" {
   type        = bool
   default     = false
