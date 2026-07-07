@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.1.1](https://github.com/schubergphilis-ep/terraform-aws-mcaf-redshift/compare/v2.1.0...v2.1.1) (2026-07-07)
+
+
+### 🐛 Fixes
+
+* migrate MCAF module sources ([#2](https://github.com/schubergphilis-ep/terraform-aws-mcaf-redshift/issues/2)) ([4de86b4](https://github.com/schubergphilis-ep/terraform-aws-mcaf-redshift/commit/4de86b4904cf32895e176b7fbf116b0d07f6eb9c))
+
 ## [2.1.0](https://github.com/schubergphilis-ep/terraform-aws-mcaf-redshift/compare/v2.0.0...v2.1.0) (2026-04-24)
 
 
@@ -115,4 +122,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.1](https://github.com/schubergphilis-ep/terraform-aws-mcaf-redshift/compare/v0.1.0...v0.1.1) (2019-09-09)
 
 ## 0.1.0 (2019-07-09)
-
