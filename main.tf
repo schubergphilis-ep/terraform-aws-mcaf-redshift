@@ -106,7 +106,7 @@ data "aws_iam_policy_document" "logging" {
 module "logging_bucket" {
   count = local.create_logging_bucket ? 1 : 0
 
-  source  = "schubergphilis/mcaf-s3/aws"
+  source  = "schubergphilis-ep/mcaf-s3/aws"
   version = "~> 2.0"
 
   region         = var.region
