@@ -46,7 +46,7 @@ module "redshift" {
 }
 
 module "vpc" {
-  source  = "schubergphilis/mcaf-vpc/aws"
+  source  = "schubergphilis-ep/mcaf-vpc/aws"
   version = "~> 3.0.0"
 
   name                = "redshift-vpc"
